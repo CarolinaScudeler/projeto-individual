@@ -1,0 +1,52 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 10vh;
+    background: radial-gradient(circle, rgba(1,28,89,0.9808298319327731) 2%, rgba(38,212,182,1) 65%);
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid white;
+}
+
+.midNavbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgNavbar {
+    display: flex;
+    align-items: center;
+}
+
+.imgNavbar img {
+    width: 150px;
+}
+
+.midNavbar ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.midNavbar ul li {
+    margin-right: 15px;
+}
+
+/* Conteúdo principal */
+
+.imgPrincipal {
+    background: url(../images/mario-kart-tour.jpg) no-repeat;
+    height: 100vh;
+    /* background-color: #0e3f58;
+    background-image: linear-gradient(180deg, #0e3f58 0%, #10dec5 50%);  */
+}
