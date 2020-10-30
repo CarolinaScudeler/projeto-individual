@@ -12,7 +12,7 @@
     background: radial-gradient(circle, rgba(1,28,89,0.9808298319327731) 2%, rgba(38,212,182,1) 65%);
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid black;
 }
 
 .midNavbar {
@@ -42,11 +42,42 @@
     margin-right: 15px;
 }
 
+.current {
+    color: blue;
+}
+
 /* Conteúdo principal */
 
 .imgPrincipal {
-    background: url(../images/mario-kart-tour.jpg) no-repeat;
-    height: 100vh;
-    /* background-color: #0e3f58;
-    background-image: linear-gradient(180deg, #0e3f58 0%, #10dec5 50%);  */
+    background: url(../images/imagem_principal.jpg) no-repeat;
+    background-size: cover;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+.footer {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoFooter {
+    width: 200px;
+}
+
+.textoFooter {
+    color: blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgFooter img {
+    width: 50px;
+    margin-right: 10px;
 }
