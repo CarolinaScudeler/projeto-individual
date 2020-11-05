@@ -74,7 +74,7 @@
     /* background: #5af5db54; */
     background: radial-gradient(circle, rgb(1 28 89 / 65%) 2%, rgb(38 212 182 / 46%) 65%);
     width: 40%;
-    height: 80%;
+    height: 90%;
     border: 3px black solid;
     border-radius: 15px;
     display: flex;
@@ -114,4 +114,22 @@
 
 .dados2 {
     margin-left: 50%;
+}
+
+.quadrado button {
+    width: 25%;
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    transition: background-color 0.8s;
+}
+
+.quadrado button:hover {
+    background-color: gray;
+}
+
+.quadrado button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
 }
