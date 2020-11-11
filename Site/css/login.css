@@ -114,3 +114,41 @@
     color: white;
     margin-bottom: 20px;
 }
+
+/* Footer */
+
+.footer {
+    background: #3332322e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textoFooter {
+    color: blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer img {
+    width: 100px;
+}
+
+.logoDev {
+    width: 33%;
+    text-align: center;
+}
+
+.logoDev img {
+    padding: 5px;
+}
+
+.logoDev h2 {
+    margin-top: 10px;
+}
+
+.imgRedes img {
+    width: 50px;
+    margin-right: 10px;
+}
