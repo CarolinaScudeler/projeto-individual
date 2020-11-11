@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: Andale Mono, monospace;
     margin: 0;
     padding: 0;
     outline: none;
@@ -8,8 +8,8 @@
 /* Navbar */
 
 .navbar {
-    height: 10vh;
-    background: radial-gradient(circle, rgba(1,28,89,0.9808298319327731) 2%, rgba(38,212,182,1) 65%);
+    height: 15vh;
+    background: radial-gradient(circle, rgba(1, 28, 89, 0.9808298319327731) 2%, rgba(38, 212, 182, 1) 65%);
     display: flex;
     justify-content: center;
     border-bottom: 3px solid black;
@@ -39,12 +39,18 @@
 }
 
 .midNavbar ul li {
+    font-size: 20px;
     margin-right: 15px;
 }
 
 .midNavbar ul li a {
     color: white;
     text-decoration: none;
+    transition: 0.8s;
+}
+
+.midNavbar ul li a:hover {
+    color: gray;
 }
 
 .current {
@@ -68,7 +74,7 @@
     /* background: #5af5db54; */
     background: radial-gradient(circle, rgb(1 28 89 / 65%) 2%, rgb(38 212 182 / 46%) 65%);
     width: 40%;
-    height: 80%;
+    height: 90%;
     border: 3px black solid;
     border-radius: 15px;
     display: flex;
@@ -80,7 +86,12 @@
 .quadrado h1 {
     font-size: 30px;
     position: relative;
-    bottom: 25%;
+    text-align: center;
+}
+
+.quadrado p {
+    font-size: 20px;
+    padding: 5px;
 }
 
 .quadrado input {
@@ -90,9 +101,35 @@
     border-radius: 10px;
 }
 
-.dados,.dados2 {
+.dados,
+.dados2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.dados {
+    margin-right: 50%;
+}
+
+.dados2 {
+    margin-left: 50%;
+}
+
+.quadrado button {
+    width: 25%;
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    transition: background-color 0.8s;
+}
+
+.quadrado button:hover {
+    background-color: gray;
+}
+
+.quadrado button a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
