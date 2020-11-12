@@ -77,23 +77,50 @@
 /* Footer */
 
 .footer {
-    background: black;
+    background: #3332322e;
+    height: 20vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 3px solid black;
 }
 
 .logoFooter {
-    width: 200px;
+    width: 150px;
 }
 
-.textoFooter {
-    color: blue;
+.logoDev {
+    text-align: center;
+}
+
+.logoDev h2 {
+    margin-top: 10px;
+}
+
+.logoDev img {
+    padding: 5px;
+    width: 100px;
+}
+
+.logoDev p {
+    font-size: 20px;
+}
+
+.textoContato {
+    color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 
-.imgFooter img {
+.textoContato h2 {
+    margin-bottom: 20px;
+}
+
+.imgRedes img {
     width: 50px;
     margin-right: 10px;
+    font-size: 20px;
 }

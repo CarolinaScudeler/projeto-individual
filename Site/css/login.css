@@ -121,46 +121,56 @@
 .quadrado a {
     color: white;
     margin-bottom: 20px;
-<<<<<<< HEAD
+
 }
 
 /* Footer */
 
 .footer {
     background: #3332322e;
+    height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: 3px solid black;
 }
 
-.textoFooter {
-    color: blue;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer img {
-    width: 100px;
+.logoFooter {
+    width: 150px;
 }
 
 .logoDev {
-    width: 33%;
     text-align: center;
-}
-
-.logoDev img {
-    padding: 5px;
 }
 
 .logoDev h2 {
     margin-top: 10px;
 }
 
+.logoDev img {
+    padding: 5px;
+    width: 100px;
+}
+
+.logoDev p {
+    font-size: 20px;
+}
+
+.textoContato {
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.textoContato h2 {
+    margin-bottom: 20px;
+}
+
 .imgRedes img {
     width: 50px;
     margin-right: 10px;
-=======
     font-size: 20px;
->>>>>>> 110173972936003189f3a098b087413b35ea0770
 }
