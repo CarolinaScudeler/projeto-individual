@@ -19,11 +19,11 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .imgNavbar {
     display: flex;
-    align-items: center;
 }
 
 .imgNavbar img {
