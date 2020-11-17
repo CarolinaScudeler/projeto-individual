@@ -83,15 +83,23 @@
     flex-direction: column;
 }
 
-.quadrado h1 {
-    font-size: 30px;
-    position: relative;
-    text-align: center;
+.titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.quadrado p {
+.titulo p {
     font-size: 20px;
     padding: 5px;
+}
+
+.dados,
+.dados2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .quadrado input {
@@ -99,21 +107,6 @@
     background: white;
     border: 2px black solid;
     border-radius: 10px;
-}
-
-.dados,
-.dados2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dados {
-    margin-right: 50%;
-}
-
-.dados2 {
-    margin-left: 50%;
 }
 
 .quadrado button {
