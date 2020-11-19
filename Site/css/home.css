@@ -100,7 +100,7 @@
 
 .box {
     overflow: auto;
-    background: radial-gradient(circle, rgba(1,28,89,0.9808298319327731) 2%, rgba(75,153,210,1) 65%);
+    background: radial-gradient(circle, rgb(1 28 89 / 88%) 2%, rgba(75,153,210,1) 65%);
     border-top: 3px white solid;
 }
 
@@ -127,7 +127,7 @@
 /* Atualizações */
 
 .att {
-    background: radial-gradient(circle, rgba(10,102,102,0.9808298319327731) 6%, rgba(35,231,221,1) 65%);
+    background: radial-gradient(circle, rgb(10 102 102 / 85%) 6%, rgba(35,231,221,1) 65%);
     height: 15vh;
     border-top: 3px black solid;
     display: flex;
