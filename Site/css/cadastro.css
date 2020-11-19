@@ -131,7 +131,7 @@
 
 .footer {
     background: #3332322e;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -152,7 +152,7 @@
 
 .logoDev img {
     padding: 5px;
-    width: 100px;
+    width: 80px;
 }
 
 .logoDev p {

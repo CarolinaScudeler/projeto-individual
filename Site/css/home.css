@@ -12,7 +12,7 @@
     background: radial-gradient(circle, rgba(1, 28, 89, 0.9808298319327731) 2%, rgba(38, 212, 182, 1) 65%);
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid black;
+    border-bottom: 3px white solid;
 }
 
 .midNavbar {
@@ -57,28 +57,126 @@
     color: blue;
 }
 
-/* Conteúdo principal */
+/* Imagens */
 
-.imgPrincipal {
-    background: url(../images/imagem_principal.jpg) no-repeat;
-    background-size: cover;
-    height: 88vh;
+.container {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1C1C1C;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+
+  .linha {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+  }
+
+  .img {
+    height: 100%;
+    width: 20vw;
+    opacity: 0.2;
+  }
+
+  .img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .img:hover {
+    opacity: 1;
+    transition: 00.5s;
+  }
+
+/* Conteúdo principal */
+
+.sobre {
+    text-align: center;
 }
 
-.imgPrincipal h1 {
+/* Imagens Sobre */
+
+.box {
+    overflow: auto;
+    background: radial-gradient(circle, rgba(1,28,89,0.9808298319327731) 2%, rgba(75,153,210,1) 65%);
+    border-top: 3px white solid;
+}
+
+.box img {
+    width: 100px;
+}
+
+.box-item {
+    width: 33%;
+    float: left;
     text-align: center;
-    font-size: 20px;
+    margin-top: 50px;
+}
+
+.box-item h3 {
+    color: white;
+    padding: 10px;
+}
+
+.box-item p {
+    margin-bottom: 15px;
+}
+
+/* Atualizações */
+
+.att {
+    background: radial-gradient(circle, rgba(10,102,102,0.9808298319327731) 6%, rgba(35,231,221,1) 65%);
+    height: 15vh;
+    border-top: 3px black solid;
+    display: flex;
+    align-items: center;
+}
+
+.textoAtt {
+    display: flex;
+    margin-left: 10%;
+}
+
+.textoAtt h2 {
+    color: white;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    margin-left: 20%;
+}
+
+.form input {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    border: 2px black solid;
+}
+
+.form button {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(139 250 184);
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: white;
 }
 
 /* Footer */
 
 .footer {
     background: #3332322e;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,7 +197,7 @@
 
 .logoDev img {
     padding: 5px;
-    width: 100px;
+    width: 80px;
 }
 
 .logoDev p {
