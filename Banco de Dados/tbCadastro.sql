@@ -8,8 +8,7 @@ usuário varchar(20) not null,
 senha varchar (10) not null,
 celular int,
 estado varchar(20),
-cidade varchar(30),
-codigoIndicacao char(8)
+cidade varchar(30)
 );
 
 insert into tbCadastro values
