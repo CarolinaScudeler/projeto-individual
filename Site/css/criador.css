@@ -60,7 +60,7 @@
 /* Conteúdo principal */
 
 .imgPrincipal {
-    background: url(../images/imagem_principal.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 6%, rgba(9,241,184,1) 86%);
     background-size: cover;
     height: 88vh;
     display: flex;
