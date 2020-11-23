@@ -70,59 +70,51 @@
 }
 
 .quadrado {
-    /* background: #5AF5DB; */
-    /* background: #5af5db54; */
-    background: radial-gradient(circle, rgb(1 28 89 / 65%) 2%, rgb(38 212 182 / 46%) 65%);
-    width: 30%;
-    height: 75%;
+    background: url(../images/fundo.jpg) no-repeat;
+    width: 52%;
+    height: 60%;
     border: 3px black solid;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
-.quadrado h1 {
-    position: relative;
-    bottom: 35px;
+.quadrado h2 {
+    font-size: 30px;
+    padding: 10px;
 }
 
 .quadrado p {
-    padding: 5px;
+    font-size: 20px;
 }
 
 .quadrado input {
-    width: 40%;
     text-align: center;
     border: 2px black solid;
     border-radius: 10px;
-    padding: 5px;
+    margin-bottom: 8px;
 }
 
 .quadrado button {
-    width: 25%;
-    padding: 5px;
+    text-align: center;
+    padding: 3px;
     border: 2px black solid;
     border-radius: 10px;
-    transition: background-color 0.8s;
 }
 
-.quadrado button:hover {
-    background-color: gray;
+.login {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.quadrado button a {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
+.cadastro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.quadrado a {
-    color: white;
-    margin-bottom: 20px;
-
-}
 
 /* Footer */
 
