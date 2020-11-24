@@ -8,11 +8,10 @@
 /* Navbar */
 
 .navbar {
-    height: 15vh;
-    background: radial-gradient(circle, rgba(1, 28, 89, 0.9808298319327731) 2%, rgba(38, 212, 182, 1) 65%);
+    height: 10vh;
+    background: radial-gradient(circle, rgba(10,152,250,1) 10%, rgba(4,20,92,0.938813025210084) 72%);
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid black;
 }
 
 .midNavbar {
@@ -31,10 +30,8 @@
 }
 
 .midNavbar ul {
-    color: white;
     display: flex;
     list-style-type: none;
-    margin-top: 35px;
     text-transform: uppercase;
 }
 
@@ -106,46 +103,28 @@
 /* Footer */
 
 .footer {
-    background: #3332322e;
-    height: 15vh;
+    background: #04145cf5;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 3px solid black;
 }
 
 .logoFooter {
-    width: 150px;
+    width: 120px;
 }
 
-.logoDev {
+.dev {
     text-align: center;
+    color: white;
 }
 
-.logoDev h2 {
+.dev h2 {
     margin-top: 10px;
 }
 
-.logoDev img {
-    padding: 5px;
-    width: 80px;
-}
-
-.logoDev p {
+.dev p {
     font-size: 20px;
-}
-
-.textoContato {
-    color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    line-height: 20px;
-    letter-spacing: 1px;
-}
-
-.textoContato h2 {
-    margin-bottom: 20px;
 }
 
 .imgRedes img {
