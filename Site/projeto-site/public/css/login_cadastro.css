@@ -92,22 +92,51 @@
     border: 2px black solid;
     border-radius: 10px;
     margin-bottom: 8px;
+    padding: 5px;
+    width: 12vw;
 }
 
 .quadrado button {
+    background: rgb(10 152 250 / 32%) 10%;
+    color: black;
     text-align: center;
-    padding: 3px;
+    padding: 5px;
     border: 2px black solid;
     border-radius: 10px;
+    width: 6vw;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.quadrado button:hover {
+    background: white;
+}
+
+.login form {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro form {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .login {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-right: 15%;
 }
 
 .cadastro {
+    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;

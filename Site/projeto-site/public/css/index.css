@@ -90,15 +90,21 @@
 
 /* Conteúdo principal */
 
+.conteudo {
+    background: radial-gradient(circle, rgb(22 51 114 / 79%) 2%, rgb(52 153 228 / 68%) 65%);
+    border-top: 4px black solid;
+}
+
 .sobre {
     text-align: center;
+    color: white;
+    margin-top: 8px;
 }
 
 /* Imagens Sobre */
 
 .box {
     overflow: auto;
-    background: radial-gradient(circle, rgb(1 28 89 / 88%) 2%, rgba(75,153,210,1) 65%);
 }
 
 .box img {
@@ -112,6 +118,12 @@
     margin-top: 50px;
 }
 
+.box img:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 14px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+}
+
 .box-item h3 {
     color: white;
     padding: 10px;
@@ -119,12 +131,13 @@
 
 .box-item p {
     margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 /* Atualizações */
 
 .att {
-    background: radial-gradient(circle, rgb(10 102 102 / 85%) 6%, rgba(35,231,221,1) 65%);
     height: 15vh;
     display: flex;
     align-items: center;
@@ -156,7 +169,7 @@
 .form button {
     height: 35px;
     width: 100px;
-    background-color: rgb(139 250 184);
+    background-color: white;
     border: 2px black solid;
     border-radius: 10px;
     margin-left: 10px;
@@ -165,7 +178,7 @@
 }
 
 .form button:hover {
-    background-color: white;
+    background-color: #1c318f57;
 }
 
 /* Footer */
