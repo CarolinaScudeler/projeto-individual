@@ -29,7 +29,7 @@
         <div class="quadrado">
             <div class="mov" id="mov">
                 <h2 id="movh2">NÃO TEM UMA CONTA?</h2>
-                <button onclick="div_mov()" id="btn_mov">CADASTRAR</button>
+                <button onclick="div_mov()" id="btn_mov">CADASTRE-SE</button>
             </div>
             <div class="divisao">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
@@ -48,9 +48,9 @@
                 <form id="form_login" method="post" onsubmit="return entrar()">
                     <h2>LOGIN</h2>
                     <p>E-mail</p>
-                    <input name="login" type="email" placeholder="Insira seu e-mail">
+                    <input name="login" type="email">
                     <p>Senha</p>
-                    <input name="senha" type="password" placeholder="Insira sua senha">
+                    <input name="senha" type="password">
                     <button type="submit">ENTRAR</button>
                 </form>
             </div>
@@ -121,11 +121,11 @@
         document.getElementById('mov').classList.toggle('movement')
 
         if (magica) {
-            document.getElementById('btn_mov').innerHTML = 'ENTRAR';
+            document.getElementById('btn_mov').innerHTML = 'LOGAR';
             document.getElementById('movh2').innerHTML = 'POSSUI UMA CONTA?';
             magica = !magica;
         } else {
-            document.getElementById('btn_mov').innerHTML = 'CADASTRAR';
+            document.getElementById('btn_mov').innerHTML = 'CADASTRE-SE';
             document.getElementById('movh2').innerHTML = 'NÃO TEM UMA CONTA?';
             magica = !magica;
         }
