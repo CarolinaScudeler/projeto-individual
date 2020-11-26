@@ -27,19 +27,13 @@
 
     <div class="imgPrincipal">
         <div class="quadrado">
-            <div class="login">
-                <h2>LOGIN</h2>
-                <form id="form_login" method="post" onsubmit="return entrar()">
-                    <p>E-mail</p>
-                    <input name="login" type="email" placeholder="Insira seu e-mail">
-                    <p>Senha</p>
-                    <input name="senha" type="password" placeholder="Insira sua senha">
-                    <button type="submit">ENTRAR</button>
-                </form>
+            <div class="mov" id="mov">
+                <h2 id="movh2">NÃO TEM UMA CONTA?</h2>
+                <button onclick="div_mov()" id="btn_mov">CADASTRAR</button>
             </div>
-            <div class="cadastro">
-                <h2>CADASTRO</h2>
+            <div class="divisao">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <h2>CADASTRO</h2>
                     <p>Nome</p>
                     <input name="nome">
                     <p>E-mail</p>
@@ -49,23 +43,17 @@
                     <button type="submit">CADASTRAR</button>
                 </form>
             </div>
-        </div>
-    </div>
-
-</body>
-
-<!-- Footer -->
-
-    <div class="footer">
-        <img class="logoFooter" src="./images/logo_emp.png">
-        <div class="dev">
-            <h2>Desenvolvedora</h2>
-            <p>Carolina Scudeler</p>
-        </div>
-        <div class="imgRedes">
-            <a href="https://www.instagram.com/_scudeler/" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg"></a>
-            <a href="https://www.facebook.com/scudeler.oliveira6" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111398.svg"></a>
-            <a href="https://github.com/CarolinaScudeler" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/733/733553.svg"></a>
+            <div class="divisao">
+                
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <h2>LOGIN</h2>
+                    <p>E-mail</p>
+                    <input name="login" type="email" placeholder="Insira seu e-mail">
+                    <p>Senha</p>
+                    <input name="senha" type="password" placeholder="Insira sua senha">
+                    <button type="submit">ENTRAR</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -113,10 +101,8 @@
         }).then(function (response) {
             
             if (response.ok) {
-
-                // window.location.href='jogos.html';
                 alert('Faça login para confirmar que foi registrado!')
-
+                div_mov()
             } else {
 
                 console.log('Erro de cadastro!');
@@ -127,6 +113,22 @@
         });
 
         return false;
+    }
+
+    var magica = true;
+
+    function div_mov() {
+        document.getElementById('mov').classList.toggle('movement')
+
+        if (magica) {
+            document.getElementById('btn_mov').innerHTML = 'ENTRAR';
+            document.getElementById('movh2').innerHTML = 'POSSUI UMA CONTA?';
+            magica = !magica;
+        } else {
+            document.getElementById('btn_mov').innerHTML = 'CADASTRAR';
+            document.getElementById('movh2').innerHTML = 'NÃO TEM UMA CONTA?';
+            magica = !magica;
+        }
     }
 
 </script>
