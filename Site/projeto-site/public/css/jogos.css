@@ -55,7 +55,7 @@
 .imgPrincipal {
     background: url(../images/imagem_principal.jpg) no-repeat;
     background-size: cover;
-    height: 190vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;

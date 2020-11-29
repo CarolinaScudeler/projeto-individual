@@ -29,18 +29,29 @@
 
     <div class="imgPrincipal">
         <div class="quadrado">
-            <input id="in_enviar" placeholder="Digite sua mensagem">
-            <button onclick="enviar()">Enviar</button>
+            <div class="chat">
+                <input id="in_mensagem" placeholder="Digite sua mensagem">
+                <button onclick="enviar()">Enviar</button>
+                <div id="div_mensagem" class="mensagem"></div>
+            </div>
             <div class="streamers">
-                <img src="./images/brtt.jpg">
-                BRTT 
-                <img src="./images/jukes.jpg">
-                JUKES 
-                <img src="./images/yoda.jpeg">
-                YODA 
+                <a href="https://www.twitch.tv/brtt" target="_blank"><img src="./images/brtt.jpg"></a>
+                <p>BRTT</p>  
+                <a href="https://www.twitch.tv/jukes" target="_blank"><img src="./images/jukes.jpg"></a>
+                <p>JUKES</p> 
+                <a href="https://www.twitch.tv/yoda" target="_blank"><img src="./images/yoda.jpeg"></a>
+                <p>YODA</p> 
+                <a href="https://www.twitch.tv/jovirone" target="_blank"><img src="./images/jovirone.png"></a>
+                <p>JOVIRONE</p>  
+                <a href="https://www.twitch.tv/rakin" target="_blank"><img src="./images/rakin.jpg"></a>
+                <p>RAKIN</p> 
+                <a href="https://www.twitch.tv/kamikat" target="_blank"><img src="./images/kami.png"></a>
+                <p>KAMI</p> 
             </div>
         </div>
     </div>
+
+    
 
 </body>
 </html>
@@ -64,3 +75,15 @@
 
 </body>
 </html>
+<script>
+
+    function enviar() {
+        var mensagem = in_mensagem.value;
+        in_mensagem.value = "";
+
+        div_mensagem.innerHTML += `${mensagem}<br>`;
+    }
+
+
+
+</script>
