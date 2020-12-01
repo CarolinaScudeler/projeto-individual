@@ -30,8 +30,10 @@
     <div class="imgPrincipal">
         <div class="quadrado">
             <div class="chat">
-                <input id="in_mensagem" placeholder="Digite sua mensagem">
-                <button onclick="enviar()">Enviar</button>
+                <div class="enviar">
+                    <input id="in_mensagem" placeholder="Digite sua mensagem">
+                    <button onclick="enviar()">Enviar</button>
+                </div>
                 <div id="div_mensagem" class="mensagem"></div>
             </div>
             <div class="streamers">
@@ -46,11 +48,13 @@
                 <a href="https://www.twitch.tv/rakin" target="_blank"><img src="./images/rakin.jpg"></a>
                 <p>RAKIN</p> 
                 <a href="https://www.twitch.tv/kamikat" target="_blank"><img src="./images/kami.png"></a>
-                <p>KAMI</p> 
+                <p>KAMI</p>
+                <a href="https://www.twitch.tv/tinowns" target="_blank"><img src="./images/tinowns.jpg"></a>
+                <p>TINOWNS</p> 
             </div>
         </div>
     </div>
-
+    
     
 
 </body>
@@ -77,13 +81,14 @@
 </html>
 <script>
 
+    var nome_usuario = sessionStorage.nome_usuario_meuapp;
+
     function enviar() {
         var mensagem = in_mensagem.value;
         in_mensagem.value = "";
 
-        div_mensagem.innerHTML += `${mensagem}<br>`;
+        div_mensagem.innerHTML += `${nome_usuario}: ${mensagem}<br>`;
+        in_mensagem.focus()
     }
-
-
 
 </script>

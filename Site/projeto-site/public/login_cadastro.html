@@ -34,7 +34,7 @@
             <div class="divisao">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                     <h2>CADASTRO</h2>
-                    <p>Nome</p>
+                    <p>Nickname</p>
                     <input name="nome">
                     <p>E-mail</p>
                     <input name="login" type="email">
@@ -74,8 +74,8 @@
 
                     resposta.json().then(json => {
 
-                        sessionStorage.login_usuario_meuapp = json.login;
-                        sessionStorage.nome_usuario_meuapp = json.nome;
+                        sessionStorage.login_usuario_meuapp = json.email;
+                        sessionStorage.nome_usuario_meuapp = json.nomeUsuario;
 
                         window.location.href = 'jogos.html';
                     });
