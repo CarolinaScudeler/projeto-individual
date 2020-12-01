@@ -3,9 +3,9 @@ use gamer_community;
 
 create table tbUsuario (
 idUsuario int primary key auto_increment,
-nome varchar(100) not null,
-email varchar(20) not null,
-senha varchar (20) not null
+nomeUsuario varchar(100) not null,
+email varchar(100) not null,
+senha varchar (30) not null
 );
 
 insert into tbCadastro values
