@@ -1,0 +1,169 @@
+* {
+    font-family: Andale Mono, monospace;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 10vh;
+    background: radial-gradient(circle, rgba(10,152,250,1) 10%, rgba(4,20,92,0.938813025210084) 72%);
+    display: flex;
+    justify-content: center;
+}
+
+.midNavbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgNavbar {
+    display: flex;
+}
+
+.imgNavbar img {
+    width: 150px;
+}
+
+.textoNavbar {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.imgSair img {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Conteúdo principal */
+
+.imgPrincipal {
+    background: url(../images/imagem_principal.jpg) no-repeat;
+    background-size: cover;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado {
+    background: url(../images/fundo_csgo.jpg);
+    width: 80%;
+    height: 90%;
+    border: 3px black solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.chat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.enviar {
+    display: flex;
+    height: inherit;
+    width: 100%;
+}
+
+.enviar input {
+    width: 70%;
+    height: 5%;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.enviar button {
+    width: 8%;
+    height: 100;
+    border: 2px black solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mensagem {
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+}
+
+.streamers {
+    width: 5%;
+    height: 95%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px white solid;
+    padding: 10px;
+}
+
+.streamers a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.streamers img {
+    width: 100%;
+    background: rgba(100, 108, 110, 0.226);
+}
+
+.streamers img:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 14px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+}
+
+.streamers p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Footer */
+
+.footer {
+    background: #04145cf5;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoFooter {
+    width: 120px;
+}
+
+.dev {
+    text-align: center;
+    color: white;
+}
+
+.dev h2 {
+    margin-top: 10px;
+}
+
+.dev p {
+    font-size: 20px;
+}
+
+.imgRedes img {
+    width: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+}

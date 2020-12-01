@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat CS:GO - Gamer Community</title>
+    <link rel="stylesheet" href="./css/chat_cs.css">
+    <link rel="shortcut icon" href="./images/logo_emp.png">
+</head>
+<body>
+    
+<!-- Navbar -->
+
+    <div class="navbar">
+        <div class="midNavbar">
+            <div class="imgNavbar">
+            <img src="./images/logo_emp.png">
+            </div>
+            <div class="textoNavbar">
+                <h1>CHAT DE INTERAÇÃO - COUNTER STRIKE: GLOBAL OFFENSIVE</h1>
+            </div>
+            <div class="imgSair">
+                <a href="index.html"><img src="./images/sair.svg"></a>
+            </div>
+        </div>
+    </div>
+
+<!-- Conteúdo principal -->
+
+    <div class="imgPrincipal">
+        <div class="quadrado">
+            <div class="chat">
+                <div class="enviar">
+                    <input id="in_mensagem" placeholder="Digite sua mensagem">
+                    <button onclick="enviar()">Enviar</button>
+                </div>
+                <div id="div_mensagem" class="mensagem"></div>
+            </div>
+            <div class="streamers">
+                <a href="https://www.twitch.tv/gafallen" target="_blank"><img src="./images/fallen.jpg"></a>
+                <p>FALLEN</p>  
+                <a href="https://www.twitch.tv/coldzin" target="_blank"><img src="./images/coldzera.png"></a>
+                <p>COLDZERA</p> 
+                <a href="https://www.twitch.tv/fer" target="_blank"><img src="./images/fergod.png"></a>
+                <p>FERGOD</p> 
+                <a href="https://www.twitch.tv/fnxlntc" target="_blank"><img src="./images/fnx.png"></a>
+                <p>FNX</p>  
+                <a href="https://www.twitch.tv/gaules" target="_blank"><img src="./images/gaules.jpg"></a>
+                <p>GAULES</p> 
+                <a href="https://www.twitch.tv/kamikat" target="_blank"><img src="./images/s1mple.png"></a>
+                <p>S1MPLE</p>
+                <a href="https://www.twitch.tv/twistzztv" target="_blank"><img src="./images/twistzz.jpeg"></a>
+                <p>TWISTZZ</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
+
+<!-- Footer -->
+
+    <div class="footer">
+        <img class="logoFooter" src="./images/logo_emp.png">
+        <div class="dev">
+            <h2>Desenvolvedora</h2>
+            <p>Carolina Scudeler</p>
+        </div>
+        <div class="imgRedes">
+            <a href="https://www.instagram.com/_scudeler/" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg"></a>
+            <a href="https://www.facebook.com/scudeler.oliveira6" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111398.svg"></a>
+            <a href="https://github.com/CarolinaScudeler" target="_blank"><img src="https://www.flaticon.com/svg/static/icons/svg/733/733553.svg"></a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="./css/chat_cs.css">
+
+</body>
+</html>
+<script>
+
+    var nome_usuario = sessionStorage.nome_usuario_meuapp;
+
+    function enviar() {
+        var mensagem = in_mensagem.value;
+        in_mensagem.value = "";
+
+        div_mensagem.innerHTML += `<b>${nome_usuario}:</b> ${mensagem}<br>`;
+        in_mensagem.focus()
+    }
+
+</script>
