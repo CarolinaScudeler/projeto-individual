@@ -1,5 +1,5 @@
 * {
-    font-family: Andale Mono, monospace;
+    font-family: 'Righteous', cursive;
     margin: 0;
     padding: 0;
     outline: none;
@@ -37,7 +37,7 @@
 
 .midNavbar ul li {
     font-size: 20px;
-    margin-right: 15px;
+    margin-right: 50px;
 }
 
 .midNavbar ul li a {

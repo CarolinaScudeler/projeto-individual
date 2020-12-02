@@ -1,5 +1,5 @@
 * {
-    font-family: Andale Mono, monospace;
+    font-family: 'Righteous', cursive;
     margin: 0;
     padding: 0;
     outline: none;
@@ -33,6 +33,7 @@
     color: white;
     display: flex;
     align-items: center;
+    font-size: 12px;
 }
 
 .imgSair img {
@@ -131,7 +132,7 @@
 }
 
 .streamers p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
 }
 
