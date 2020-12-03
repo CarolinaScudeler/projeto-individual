@@ -5,6 +5,18 @@
     outline: none;
 }
 
+/* width */
+* ::-webkit-scrollbar {
+    width: 8px;
+    background: #1C1C1C;
+}
+
+/* handle */
+* ::-webkit-scrollbar-thumb {
+    background: rgba(4,20,92,0.938813025210084) 72%;
+    border-radius: 5px;
+}
+
 /* Navbar */
 
 .navbar {
